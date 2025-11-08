@@ -22,7 +22,7 @@ export default function WebPage() {
       <p className="text-muted-foreground mt-2">
         {/* //Explore student progress and tasks for web development. */}
 
-        Project1: To-Do List App
+        👉🏻Project1: To-Do List App
         <br />
         Objective:
         Build a responsive To-Do List app where users can add, edit, delete, and mark tasks as completed. Tasks should be stored in local storage to persist across page reloads.
@@ -48,7 +48,7 @@ export default function WebPage() {
       <p className="text-muted-foreground mt-2">
         {/* //Explore student progress and tasks for web development. */}
 
-        Project2: Weather Application 
+        👉🏻Project2: Weather Application 
         <br />
         Objective:
         <br />
@@ -79,7 +79,7 @@ export default function WebPage() {
        <p className="text-muted-foreground mt-2">
         {/* Third Project */}
         
-        Project3: E-Commerce Website (MERN Stack)
+        👉🏻Project3: E-Commerce Website (MERN Stack)
         <br />
         Objective:
         <br />
