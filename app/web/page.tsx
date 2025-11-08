@@ -54,7 +54,7 @@ export default function WebPage() {
         <br />
         Build a responsive Weather App that allows users to view current weather conditions and forecasts for their location or any searched city. The app should fetch data from a reliable weather API and present it in a clean, user-friendly interface.
         <br />
-        Mandatory Features:
+        Mandatory ures:
         <br />
         Search by City: Users can search for weather information by entering a city name.
         <br />
@@ -75,6 +75,27 @@ export default function WebPage() {
         Background Animation: Dynamic backgrounds based on weather (e.g., rain, snow, sunshine).
         <br />
         Air Quality Index (AQI): Show AQI data if available from the API.
+      </p>
+       <p className="text-muted-foreground mt-2">
+        {/* Third Project */}
+        
+        Project3: E-Commerce Website (MERN Stack)
+        <br />
+        Objective:
+        <br />
+        Build a basic E-Commerce web app using the MERN stack with full CRUD operations.
+        <br />
+        Mandatory Features:
+        <br />
+        Add, view, edit, and delete products (name, price, description, image)
+        <br />
+        Display products on the frontend with a responsive UI
+        <br />
+        Optional Enhancements (Unique Features):
+        <br />
+        Search and filter products
+        <br />
+        Authentication for admin
       </p>
       <div className="mt-8">
         <DevList kind="webDev" />
