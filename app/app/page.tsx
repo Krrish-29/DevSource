@@ -159,12 +159,35 @@ export default function AppPage() {
                         🔧 Setup Instructions
                       </h3>
                       <ol className="space-y-2">
-                        {project.setup.map((step, idx) => (
-                          <li key={idx} className="flex items-start gap-3">
-                            <span className="font-bold text-xs mt-0.5 shrink-0">{idx + 1}.</span>
-                            <span className="text-sm leading-relaxed">{step}</span>
-                          </li>
-                        ))}
+                        {project.setup.map((step, idx) => {
+                          // Convert URLs in text to clickable links
+                          const urlRegex = /(https?:\/\/[^\s]+)/g;
+                          const parts = step.split(urlRegex);
+                          
+                          return (
+                            <li key={idx} className="flex items-start gap-3">
+                              <span className="font-bold text-xs mt-0.5 shrink-0">{idx + 1}.</span>
+                              <span className="text-sm leading-relaxed">
+                                {parts.map((part, i) => {
+                                  if (part.match(urlRegex)) {
+                                    return (
+                                      <a
+                                        key={i}
+                                        href={part}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-blue-500 hover:text-blue-400 underline"
+                                      >
+                                        {part}
+                                      </a>
+                                    );
+                                  }
+                                  return <span key={i}>{part}</span>;
+                                })}
+                              </span>
+                            </li>
+                          );
+                        })}
                       </ol>
                     </div>
                   )}
