@@ -57,6 +57,25 @@ export default function AppPage() {
         <br/>
         Use FireBase with User authentication.
       </p>
+      <p className="text-muted-foreground mt-2">
+        Project3: Movie App
+        <br/>
+        Objective:
+        <br/>
+        Creating a modern Movies app using Clean Architecture and MVVM. 
+        <br/>
+        Mandatory Features:
+        <br/>
+        Movies should be arranged in different categories like New, Trending, Sci-Fi, Fiction.
+        <br/>
+        Opening any Movie should open either a dialog or New page showing all the infomation regarding the movie.
+        <br/>
+        Responsive UI Design a clean, minimal, and responsive interface.
+        <br/>
+        Optional Enhancements:
+        <br/>
+        Use FireBase with User authentication.
+      </p>
       <div className="mt-8">
         <DevList kind="appDev" />
       </div>
